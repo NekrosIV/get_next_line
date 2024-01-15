@@ -6,6 +6,9 @@ Le projet Get Next Line de l'école 42 consiste en l'implémentation d'une fonct
 ## Partie Obligatoire
 
 ### Fonction Principale
+- [x] **[Sujet](fr.subject.pdf):** Voici le sujet de `get_next_line`.
+
+### Fonction Principale
 - [x] **[get_next_line.c](get_next_line.c ):** La fonction principale qui lit une ligne depuis un descripteur de fichier.
 
 ### Fichiers Associés
