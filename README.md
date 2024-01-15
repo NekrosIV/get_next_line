@@ -5,7 +5,7 @@ Le projet Get Next Line de l'école 42 consiste en l'implémentation d'une fonct
 
 ## Partie Obligatoire
 
-### Fonction Principale
+### Sujet
 - [x] **[Sujet](fr.subject.pdf):** Voici le sujet de `get_next_line`.
 
 ### Fonction Principale
