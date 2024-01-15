@@ -48,3 +48,7 @@ Exemple de compilation :
 ```bash
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
 ```
+## Note
+
+- Voici la note que j'ai obtenue :
+    ![Note](img.png)
