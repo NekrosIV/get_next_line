@@ -15,15 +15,36 @@ Le projet Get Next Line de l'école 42 consiste en l'implémentation d'une fonct
 ## Partie Bonus
 
 ### Fonction Principale
-- [x] **[get_next_line_bonus.c](get_next_line_bonus.c ):**** Version de la fonction principale permettant de gérer plusieurs descripteurs de fichier et avec une seule variable statique.
+- [x] **[get_next_line_bonus.c](get_next_line_bonus.c ):** Version de la fonction principale permettant de gérer plusieurs descripteurs de fichier et avec une seule variable statique.
 
 ### Fichiers Associés
 - [x] **[get_next_line_bonus.h](get_next_line_bonus.h ):** Fichier d'en-tête contenant les prototype des fonctions pour la partie bonus.
 - [x] **[get_next_line_utils_bonus.c](get_next_line_utils_bonus.c ):** Fichier contenant des fonctions utilitaires nécessaires à la réalisation de `get_next_line_bonus`.
 
+## Utilisation
+```c
+#include "get_next_line.h"
+
+int main(void)
+{
+    int fd = open("README.md", O_RDONLY);
+    char *line;
+
+    // avec cette boucle la fonctione va lire tout le fichier
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        printf("%s\n", line);
+        free(line);
+    }
+
+    close(fd);
+    return 0;
+}
+```
 ### Compilation
 Le programme doit être compilé avec l'option `-D BUFFER_SIZE=n`, où `n` est la taille du buffer lors des appels à `read()`.
 
 Exemple de compilation :
 ```bash
-cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
+cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
+```
