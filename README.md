@@ -25,6 +25,8 @@ Le projet Get Next Line de l'école 42 consiste en l'implémentation d'une fonct
 - [x] **[get_next_line_utils_bonus.c](get_next_line_utils_bonus.c ):** Fichier contenant des fonctions utilitaires nécessaires à la réalisation de `get_next_line_bonus`.
 
 ## Utilisation
+
+### main.c
 ```c
 #include "get_next_line.h"
 
