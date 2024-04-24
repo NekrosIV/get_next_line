@@ -57,8 +57,9 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
 
 - Voici la note que j'ai obtenue :
     ![Note](img.png)
-  ```c
-  #include <fcntl.h>
+```c
+
+ #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -223,4 +224,5 @@ char	*get_next_line(int fd)
 	}
 	return (result(storage, byte_read));
 }
+ 
 ```
